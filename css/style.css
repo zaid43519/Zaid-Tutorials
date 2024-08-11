@@ -1,0 +1,259 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#container
+{
+    /* width: 1350px; */
+    width: 95%;
+    /* border: 2px red solid; */
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#header
+{
+    /* height: 100px; */
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#logo
+{
+    /* : lefloatft; */
+    flex: 50%;
+    text-shadow: 2px 2px 2px #76528BFF;
+   
+}
+#logo h1 a
+{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    color: #CBCE91FF;
+}
+#searchbox
+{
+    flex: 50%;
+    /* background-color: #76528BFF; */
+    background: linear-gradient(#76528BFF,#CBCE91FF);
+    /* width: 500px; */
+    /* height: 50px; */
+    padding: 20px ;
+    border: 1px #fff solid ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text
+{
+ float: left;
+ width: 350px;
+ padding: 5px;
+ font-size: 15px;
+ color: grey;
+ font-weight: bold;
+ border: 1px #fff solid;
+ border-radius: 5px;
+ background: #fff url(../css/Images/searchimg.webp) no-repeat right center ;
+ background-size: contain;
+  
+}
+.submit
+{
+    margin-left: 10px;
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    background-color:#CBCE91FF ;
+    border: 1px #fff solid ;
+    border-radius: 5px;
+}
+#menu
+{
+    /* height: 35px; */
+    /* background-color: #76528BFF; */
+    background: linear-gradient(#76528BFF,#CBCE91FF);
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center;  */
+
+}
+#menu a
+{
+    padding: 0px 132px;
+    height: 30px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    text-transform: capitalize;
+    border-right: 1px solid #CBCE91FF;
+    font-size: 15px;
+    
+}
+#menu a:last-child
+{
+   border-right: none;
+}
+#menu a.log
+{
+    color:#CBCE91FF ;
+}
+#menu a:hover,#menu a.active
+{
+    font-size: 16px;
+    color: #CBCE91FF;
+    font-weight: bold;
+}
+
+@media screen and (max-width:700px) 
+{
+    #menu
+    {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #menu a 
+    {
+        border-right: none;
+    }
+}
+
+#intro
+{
+   /* background-color: rgb(157, 118, 180);  */
+   background: linear-gradient(#76528BFF,#CBCE91FF);
+   padding: 30px;
+   margin: 15px 0px;
+}
+#intro h3
+{
+    font-size: 40px;
+    color: whitesmoke;
+}
+#intro p
+{
+   font-size: 20px; 
+   text-align: justify;
+   color: whitesmoke;
+}
+.sidebars
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar 
+{
+    /* height: 500px; */
+    /* width: 600px; */
+    height: 100%;
+    width: 100%;
+    border: 2px solid #76528BFF;
+    border-radius: 20px;
+    padding: 10px 30px;
+    /* flex: 50%; */
+}
+#leftsb
+{
+    float: left;
+}
+#rightsb
+{
+    float: right;
+}
+.sidebar h3
+{
+    color: #CBCE91FF;
+    font-size: 30px;
+}
+.sidebar ul
+{
+    padding-top: 10px;
+}
+.sidebar ul li a
+{
+ text-decoration: none;
+ font-size: 20px;
+ color: #CBCE91FF;
+
+}
+.sidebar ul li a:hover
+{
+  color: #76528BFF;
+  font-size: 22px;
+  font-weight: bold ;
+}
+#leftsb ul li
+{
+    padding: 5px 0px 5px 10px;
+    list-style-image: url(../css/Images/checkbox.png);
+    
+   
+   
+}
+#rightsb ul li
+{
+  padding: 20px 0px 20px 30px;
+  list-style-image: url(../css/Images/background.png);
+}
+/* #leftsb
+{
+    float: left;
+}
+#rightsb
+{
+    float: right;
+} */
+ .sidebarwrapper
+ {
+    padding: 5px;
+    flex: 50%;
+
+ }
+ .card
+ {
+   width: 100%;
+   border: 1px solid transparent; 
+   border-radius: 20px;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+ }
+ .card .cardhead
+ {
+    background-color: #76528BFF;
+    padding: 10px;
+ }
+ .card .cardhead h3
+ {
+    text-align: center;
+    color: white;
+ }
+.clear
+{
+    clear: both;
+}
+#footer
+{
+    /* height: 50px; */
+    /* background-color: #76528BFF; */
+    background: linear-gradient(#76528BFF,#CBCE91FF);
+    padding: 10px 30px;
+    margin-top: 15px;
+
+}
+#footer p
+{
+    text-align: center;
+    color: #CBCE91FF;
+    padding-top: 15px;
+}
